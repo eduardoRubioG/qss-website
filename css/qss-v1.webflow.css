@@ -16,7 +16,9 @@ h2 {
 
 p {
   margin-bottom: 10px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans,
+    sans-serif;
 }
 
 .nav-wrapper {
@@ -63,6 +65,24 @@ p {
   bottom: 0%;
   left: auto;
   right: 20%;
+}
+
+.cta-btn.hero-version::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background-color: rgba(27, 27, 27, 0.1);
+  height: 100%;
+  width: 100%;
+
+  transition: transform 200ms ease-in-out;
+  transform-origin: bottom;
+  transform: scaleY(0);
+}
+
+.cta-btn.hero-version:hover::after {
+  transform: scaleY(1);
 }
 
 .cta-btn.black {
@@ -132,9 +152,9 @@ p {
 }
 
 .color-line-txt {
-  color: rgba(27, 27, 27, .3);
+  color: rgba(27, 27, 27, 0.3);
   text-align: right;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -152,7 +172,7 @@ p {
 }
 
 .section-num {
-  color: rgba(250, 250, 250, .1);
+  color: rgba(250, 250, 250, 0.1);
   font-size: 12.5rem;
   font-weight: 500;
   line-height: 100%;
@@ -208,7 +228,9 @@ p {
 }
 
 .body-txt {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans,
+    sans-serif;
   font-size: 1.3rem;
   font-weight: 300;
   line-height: 150%;
@@ -246,7 +268,7 @@ p {
 
 .services-header {
   margin-bottom: 0;
-  padding-right: .3rem;
+  padding-right: 0.3rem;
   font-size: 8rem;
   line-height: 100%;
 }
@@ -258,7 +280,7 @@ p {
 }
 
 .check-mark {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .list {
@@ -299,7 +321,9 @@ p {
 
 .form-block {
   color: #1b1b1b;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans,
+    sans-serif;
   font-weight: 300;
 }
 
@@ -333,7 +357,7 @@ p {
 }
 
 .uui-button {
-  grid-column-gap: .5rem;
+  grid-column-gap: 0.5rem;
   color: #1b1b1b;
   text-align: center;
   white-space: nowrap;
@@ -342,20 +366,20 @@ p {
   border-radius: 3px;
   justify-content: center;
   align-items: center;
-  padding: .5rem 2.5rem;
+  padding: 0.5rem 2.5rem;
   font-family: Clashdisplay, sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
   text-decoration: none;
-  transition: all .3s;
+  transition: all 0.3s;
   display: flex;
-  box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
 }
 
 .uui-button:hover {
   color: #fafafa;
-  background-color: rgba(53, 215, 69, .6);
+  background-color: rgba(53, 215, 69, 0.6);
   border: 3px solid #35d745;
 }
 
@@ -363,25 +387,27 @@ p {
   background-color: #35d745;
   border-style: solid;
   border-color: #35d745;
-  box-shadow: 0 1px 2px rgba(16, 24, 40, .05), 0 0 0 4px #f4ebff;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05), 0 0 0 4px #f4ebff;
 }
 
 .uui-button-tertiary-gray {
-  grid-column-gap: .5rem;
+  grid-column-gap: 0.5rem;
   color: #475467;
   white-space: nowrap;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   justify-content: center;
   align-items: center;
-  padding: .625rem 1.125rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  padding: 0.625rem 1.125rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans,
+    sans-serif;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
   text-decoration: none;
-  transition: all .3s;
+  transition: all 0.3s;
   display: flex;
 }
 
@@ -401,24 +427,26 @@ p {
 }
 
 .uui-button-secondary-gray {
-  grid-column-gap: .5rem;
+  grid-column-gap: 0.5rem;
   color: #344054;
   text-align: center;
   white-space: nowrap;
   background-color: #fff;
   border: 1px solid #d0d5dd;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   justify-content: center;
   align-items: center;
-  padding: .625rem 1.125rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  padding: 0.625rem 1.125rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans,
+    sans-serif;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
   text-decoration: none;
-  transition: all .3s;
+  transition: all 0.3s;
   display: flex;
-  box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
 }
 
 .uui-button-secondary-gray:hover {
@@ -428,16 +456,17 @@ p {
 
 .uui-button-secondary-gray:focus {
   background-color: #fff;
-  box-shadow: 0 1px 2px rgba(16, 24, 40, .05), 0 0 0 4px #f2f4f7;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05), 0 0 0 4px #f2f4f7;
 }
 
-.uui-button-secondary-gray.show-tablet, .show-tablet {
+.uui-button-secondary-gray.show-tablet,
+.show-tablet {
   display: none;
 }
 
 .uui-navbar01_button-wrapper {
-  grid-column-gap: .75rem;
-  grid-row-gap: .75rem;
+  grid-column-gap: 0.75rem;
+  grid-row-gap: 0.75rem;
   align-items: center;
   display: flex;
 }
@@ -456,7 +485,7 @@ p {
   padding: 1.75rem 1rem;
   font-size: 1rem;
   font-weight: 400;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .uui-navbar01_link:hover {
@@ -489,19 +518,21 @@ p {
 }
 
 .uui-button-link {
-  grid-column-gap: .5rem;
+  grid-column-gap: 0.5rem;
   color: #6941c6;
   white-space: nowrap;
   background-color: rgba(0, 0, 0, 0);
   justify-content: center;
   align-items: center;
   padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans,
+    sans-serif;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
   text-decoration: none;
-  transition: all .3s;
+  transition: all 0.3s;
   display: flex;
 }
 
@@ -510,40 +541,44 @@ p {
 }
 
 .uui-button-link.is-button-xsmall {
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 .uui-navbar01_dropdown-content-button-wrapper {
   letter-spacing: normal;
   margin-top: 1rem;
-  margin-left: .75rem;
-  font-size: .875rem;
+  margin-left: 0.75rem;
+  font-size: 0.875rem;
 }
 
 .uui-button-row {
-  grid-column-gap: .75rem;
-  grid-row-gap: .75rem;
+  grid-column-gap: 0.75rem;
+  grid-row-gap: 0.75rem;
   flex-wrap: wrap;
   align-items: center;
   display: flex;
 }
 
 .uui-navbar01_item-button-wrapper {
-  margin-top: .75rem;
+  margin-top: 0.75rem;
 }
 
 .uui-text-size-small {
   color: #475467;
   letter-spacing: normal;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
-  font-size: .875rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans,
+    sans-serif;
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 
 .uui-navbar01_item-heading {
   color: #101828;
-  margin-bottom: .25rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  margin-bottom: 0.25rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans,
+    sans-serif;
   font-weight: 600;
 }
 
@@ -573,7 +608,7 @@ p {
   width: 100%;
   height: 6.5rem;
   min-width: 11rem;
-  border-radius: .375rem;
+  border-radius: 0.375rem;
   justify-content: flex-start;
   align-items: center;
   display: flex;
@@ -584,14 +619,14 @@ p {
 .uui-navbar01_blog-item {
   grid-column-gap: 1.5rem;
   grid-row-gap: 0px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   grid-template-rows: auto;
-  grid-template-columns: .6fr 1fr;
+  grid-template-columns: 0.6fr 1fr;
   grid-auto-columns: 1fr;
   align-items: start;
-  padding: .75rem;
+  padding: 0.75rem;
   text-decoration: none;
-  transition: all .3s;
+  transition: all 0.3s;
   display: grid;
 }
 
@@ -601,7 +636,7 @@ p {
 
 .uui-navbar01_dropdown-blog-list {
   grid-column-gap: 0rem;
-  grid-row-gap: .5rem;
+  grid-row-gap: 0.5rem;
   flex-direction: column;
   grid-template-rows: auto;
   grid-template-columns: 1fr;
@@ -613,15 +648,17 @@ p {
 .uui-navbar01_dropdown-content-heading {
   color: #7f56d9;
   letter-spacing: normal;
-  margin-left: .75rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
-  font-size: .875rem;
+  margin-left: 0.75rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans,
+    sans-serif;
+  font-size: 0.875rem;
   font-weight: 600;
 }
 
 .uui-navbar01_dropdown-content-wrapper {
   z-index: 1;
-  grid-row-gap: .75rem;
+  grid-row-gap: 0.75rem;
   grid-template-rows: min-content;
   grid-template-columns: 1fr;
   grid-auto-rows: min-content;
@@ -659,14 +696,14 @@ p {
 .uui-navbar01_dropdown-link {
   grid-column-gap: 1rem;
   grid-row-gap: 0px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   grid-template-rows: auto;
   grid-template-columns: max-content 1fr;
   grid-auto-columns: 1fr;
   align-items: flex-start;
-  padding: .75rem;
+  padding: 0.75rem;
   text-decoration: none;
-  transition: all .3s;
+  transition: all 0.3s;
   display: grid;
 }
 
@@ -675,25 +712,27 @@ p {
 }
 
 .uui-badge-small-success {
-  grid-column-gap: .25rem;
+  grid-column-gap: 0.25rem;
   color: #027a48;
   white-space: nowrap;
   mix-blend-mode: multiply;
   background-color: #ecfdf3;
   border-radius: 10rem;
   align-items: center;
-  padding: .125rem .5rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
-  font-size: .75rem;
+  padding: 0.125rem 0.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans,
+    sans-serif;
+  font-size: 0.75rem;
   font-weight: 500;
   display: flex;
 }
 
 .uui-navbar01_text-wrapper {
-  grid-column-gap: .5rem;
+  grid-column-gap: 0.5rem;
   grid-row-gap: 0px;
   align-items: center;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
   display: flex;
 }
 
@@ -701,15 +740,17 @@ p {
   color: #7f56d9;
   letter-spacing: normal;
   margin-top: 0;
-  margin-bottom: .25rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
-  font-size: .875rem;
+  margin-bottom: 0.25rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans,
+    sans-serif;
+  font-size: 0.875rem;
   font-weight: 600;
 }
 
 .uui-navbar01_dropdown-link-list {
   grid-column-gap: 0px;
-  grid-row-gap: .5rem;
+  grid-row-gap: 0.5rem;
   grid-template-rows: max-content;
   grid-template-columns: 1fr;
   grid-auto-rows: max-content;
@@ -745,7 +786,8 @@ p {
 }
 
 .uui-navbar01_dropdown-list {
-  box-shadow: 0 12px 16px -4px rgba(0, 0, 0, .08), 0 4px 6px -2px rgba(16, 24, 40, .03);
+  box-shadow: 0 12px 16px -4px rgba(0, 0, 0, 0.08),
+    0 4px 6px -2px rgba(16, 24, 40, 0.03);
 }
 
 .uui-navbar01_dropdown-list.w--open {
@@ -781,10 +823,12 @@ p {
   color: #475467;
   align-items: center;
   padding: 1.75rem 2.5rem 1.75rem 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans,
+    sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  transition: all .3s;
+  transition: all 0.3s;
   display: flex;
 }
 
@@ -834,9 +878,9 @@ p {
   height: 50%;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
-  background-color: rgba(255, 255, 255, .2);
-  border-bottom-right-radius: .5rem;
-  border-bottom-left-radius: .5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
   position: absolute;
   top: 50%;
   bottom: 0%;
@@ -859,15 +903,15 @@ p {
 .uui-logo_logomark {
   width: 2rem;
   height: 2rem;
-  border: .1px solid #dae0e8;
-  border-radius: .5rem;
+  border: 0.1px solid #dae0e8;
+  border-radius: 0.5rem;
   flex: none;
   justify-content: center;
   align-items: center;
   display: flex;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 1px 1px rgba(16, 24, 40, .06), 0 1px 2px rgba(16, 24, 40, .1);
+  box-shadow: 0 1px 1px rgba(16, 24, 40, 0.06), 0 1px 2px rgba(16, 24, 40, 0.1);
 }
 
 .uui-logo_component {
@@ -1002,7 +1046,7 @@ p {
 .socials-icon {
   width: 2rem;
   color: #fafafa;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .socials-icon.dark {
@@ -1014,7 +1058,7 @@ p {
 }
 
 .lowkey {
-  color: rgba(250, 250, 250, .5);
+  color: rgba(250, 250, 250, 0.5);
 }
 
 @media screen and (max-width: 991px) {
@@ -1034,7 +1078,8 @@ p {
     width: 100%;
   }
 
-  .services-header, .contact-big-txt {
+  .services-header,
+  .contact-big-txt {
     font-size: 5rem;
   }
 
@@ -1083,7 +1128,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: -.5rem;
+    margin-right: -0.5rem;
     padding-bottom: 0;
     padding-right: 0;
     display: flex;
@@ -1097,7 +1142,8 @@ p {
     display: none;
   }
 
-  .uui-button-secondary-gray.show-tablet, .show-tablet {
+  .uui-button-secondary-gray.show-tablet,
+  .show-tablet {
     display: block;
   }
 
@@ -1119,7 +1165,7 @@ p {
   .uui-navbar01_link {
     width: 100%;
     color: #fafafa;
-    padding: .75rem 0;
+    padding: 0.75rem 0;
     font-size: 1.125rem;
   }
 
@@ -1129,7 +1175,7 @@ p {
 
   .uui-navbar01_dropdown-right-overlay-absolute {
     min-width: 100%;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
   }
 
   .uui-navbar01_dropdown-content-button-wrapper {
@@ -1220,8 +1266,8 @@ p {
   .uui-navbar01_dropdown-toggle {
     color: #101828;
     align-items: center;
-    padding-top: .75rem;
-    padding-bottom: .75rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
     padding-left: 0;
     font-size: 1.125rem;
     display: flex;
@@ -1238,7 +1284,7 @@ p {
 
   .uui-navbar01_menu-left {
     grid-column-gap: 0px;
-    grid-row-gap: .5rem;
+    grid-row-gap: 0.5rem;
     color: #101828;
     flex-direction: column;
     align-items: flex-start;
@@ -1355,7 +1401,8 @@ p {
     background-color: #fff;
   }
 
-  .uui-navbar01_link, .uui-button-link {
+  .uui-navbar01_link,
+  .uui-button-link {
     font-size: 1rem;
   }
 
@@ -1373,7 +1420,7 @@ p {
 
   .uui-navbar01_blog-item {
     grid-column-gap: 1rem;
-    grid-template-columns: .6fr 1fr;
+    grid-template-columns: 0.6fr 1fr;
   }
 
   .uui-navbar01_dropdown-content-right {
@@ -1385,12 +1432,12 @@ p {
   }
 
   .uui-badge-small-success {
-    padding: .125rem .5rem;
+    padding: 0.125rem 0.5rem;
   }
 
   .uui-navbar01_dropdown-link-list {
     max-width: none;
-    grid-row-gap: .5rem;
+    grid-row-gap: 0.5rem;
   }
 
   .uui-navbar01_dropdown-content-left {
@@ -1413,7 +1460,7 @@ p {
   }
 
   .uui-styleguide_logomark-bg {
-    background-image: url('../images/untitled-ui-logomark.svg');
+    background-image: url("../images/untitled-ui-logomark.svg");
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1450,7 +1497,7 @@ p {
   }
 
   .footer-link:hover {
-    color: rgba(26, 27, 31, .75);
+    color: rgba(26, 27, 31, 0.75);
   }
 
   .footer-social-block {
@@ -1467,7 +1514,7 @@ p {
   }
 
   .footer-copyright-center {
-    color: rgba(250, 250, 250, .8);
+    color: rgba(250, 250, 250, 0.8);
     font-size: 11px;
   }
 }
@@ -1487,7 +1534,8 @@ p {
     padding-bottom: 6rem;
   }
 
-  .hero-txt, .hero-content-wrapper {
+  .hero-txt,
+  .hero-content-wrapper {
     width: 100%;
   }
 
@@ -1506,7 +1554,7 @@ p {
 
   .uui-navbar01_dropdown-blog-list {
     grid-column-gap: 0px;
-    grid-row-gap: .5rem;
+    grid-row-gap: 0.5rem;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr;
     grid-auto-columns: 1fr;
@@ -1528,35 +1576,35 @@ p {
   }
 }
 
-#w-node-c99580d2-abc8-9619-8b71-80a9c0c8204f-53df957a, #w-node-_999791dd-becd-fba6-db6d-b59663d520b5-53df957a {
+#w-node-c99580d2-abc8-9619-8b71-80a9c0c8204f-53df957a,
+#w-node-_999791dd-becd-fba6-db6d-b59663d520b5-53df957a {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-
 @font-face {
-  font-family: 'Clashdisplay';
-  src: url('../fonts/ClashDisplay-Bold.ttf') format('truetype');
+  font-family: "Clashdisplay";
+  src: url("../fonts/ClashDisplay-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Clashdisplay';
-  src: url('../fonts/ClashDisplay-Medium.ttf') format('truetype');
+  font-family: "Clashdisplay";
+  src: url("../fonts/ClashDisplay-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Clashdisplay';
-  src: url('../fonts/ClashDisplay-Regular.ttf') format('truetype');
+  font-family: "Clashdisplay";
+  src: url("../fonts/ClashDisplay-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Clashdisplay';
-  src: url('../fonts/ClashDisplay-Semibold.ttf') format('truetype');
+  font-family: "Clashdisplay";
+  src: url("../fonts/ClashDisplay-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
