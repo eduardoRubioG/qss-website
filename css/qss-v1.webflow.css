@@ -21,6 +21,15 @@ p {
     sans-serif;
 }
 
+.inline-button {
+  color: #1b1b1b;
+  font-weight: 600;
+  /* padding: 0.5rem 2.5rem; */
+  border-radius: 3px;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
 .nav-wrapper {
   max-width: 1440px;
   justify-content: space-between;
@@ -1520,6 +1529,9 @@ p {
 }
 
 @media screen and (max-width: 479px) {
+  .inline-button {
+    width: 100%;
+  }
   .container {
     padding-bottom: 6rem;
   }
